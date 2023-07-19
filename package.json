@@ -1,6 +1,6 @@
 {
-  "homepage": "http://Hansss18.github.io/portfolio-hans",
-  "name": "yt-portfolio",
+  "homepage": "https://hansss18.github.io/portfolio-hans/",
+  "name": "portfolio-hans",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
