@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { AiOutlineGithub, AiOutlineInstagram } from "react-icons/ai";
-import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 
@@ -16,26 +15,27 @@ const ProfComponent = () => {
           <h1 className="green">Farhan Ab.G</h1>
           <h3>Mobile Developer</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-            corporis quos?
+            I am Farhan Ab.G, a semester student
+            active end of the organization, love that thing
+            related to technology and accustomed
+            operate under pressure
           </p>
           <button>Let's talk</button>
           <Social>
             <p>Check out my</p>
             <div className="social-icons">
               <span>
-                <a href="https://www.instagram.com/hansss.18/" target="_blank">
+                <a href="https://www.instagram.com/hansss.18/" target="_blank" rel="noreferrer">
                   <AiOutlineInstagram />
                 </a>
               </span>
               <span>
-                <a href="https://github.com/Hansss18" target="_blank">
+                <a href="https://github.com/Hansss18" target="_blank" rel="noreferrer">
                   <AiOutlineGithub />
                 </a>
               </span>
               <span>
-                <a href="https://www.linkedin.com/in/farhan-ab-g-74001a260/" target="_blank">
+                <a href="https://www.linkedin.com/in/farhan-ab-g-74001a260/" target="_blank" rel="noreferrer">
                   <FaLinkedinIn />
                 </a>
               </span>
