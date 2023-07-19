@@ -4,7 +4,7 @@ import ProfComponent from "./components/Banner/ProfComponent";
 import Clients from "./components/Clients/Clients";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
-import Services from "./components/Service/Services";
+import Skill from "./components/Skills/Skills";
 function App() {
   return (
     <Container>
@@ -12,11 +12,11 @@ function App() {
         <Header />
         <ProfComponent />
       </Banner>
-      <Services />
+      <Skill />
       <LightColor>
         <Projects />
       </LightColor>
-      <Clients />
+      {/* <Clients /> */}
       <LightColor>
         <Footer />
       </LightColor>
