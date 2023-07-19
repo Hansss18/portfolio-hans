@@ -1,11 +1,24 @@
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Header from "./components/Banner/Header";
 import ProfComponent from "./components/Banner/ProfComponent";
-import Clients from "./components/Clients/Clients";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import Skill from "./components/Skills/Skills";
+
 function App() {
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      document.title = document.hidden ? "Come back please :(" : "Portfolio-Hans";
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
+
   return (
     <Container>
       <Banner>
