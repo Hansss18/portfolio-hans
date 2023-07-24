@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { AiOutlineGithub, AiOutlineInstagram } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 
 const ProfComponent = () => {
@@ -20,7 +20,13 @@ const ProfComponent = () => {
             related to technology and accustomed
             operate under pressure
           </p>
-          <button>Let's talk</button>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = 'mailto:abgfarhan18@gmail.com';
+            }}
+          > Let's talk</button>
           <Social>
             <p>Check out my</p>
             <div className="social-icons">
@@ -37,6 +43,16 @@ const ProfComponent = () => {
               <span>
                 <a href="https://www.linkedin.com/in/farhan-ab-g-74001a260/" target="_blank" rel="noreferrer">
                   <FaLinkedinIn />
+                </a>
+              </span>
+              <span>
+                <a href="https://www.facebook.com/farhan.a.ghani.90/" target="_blank" rel="noreferrer">
+                  <FaFacebook />
+                </a>
+              </span>
+              <span>
+                <a href="https://twitter.com/Farhan180202" target="_blank" rel="noreferrer">
+                  <FaTwitter />
                 </a>
               </span>
             </div>
