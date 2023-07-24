@@ -4,26 +4,26 @@ import { GiCandleFlame } from "react-icons/gi";
 
 const Header = () => {
     const [bar, setBar] = useState(false);
-  return (
-    <Container bar={bar}>
-        <Logo>
-            <span className='green'><GiCandleFlame/></span>
-            <h1>Portfolio</h1>
-        </Logo>
-        <Nav bar={bar}>
-            <span><a href="#home">Home</a></span>
-            <span><a href="#skills">Skills</a></span>
-            <span><a href="#project">Projects</a></span>
-            {/* <span><a href="#client">Testimonials</a></span> */}
-            <span><a href="#footer">Portfolio</a></span>
-        </Nav>
-        <div
-        onClick={() => setBar(!bar)}
-        className="bars">
-            <div className="bar"></div>
-        </div>
-    </Container>
-  )
+    return (
+        <Container bar={bar}>
+            <Logo>
+                <span className='green'><GiCandleFlame /></span>
+                <h1>Portfolio</h1>
+            </Logo>
+            <Nav bar={bar}>
+                <span><a href="#home">Home</a></span>
+                <span><a href="#skills">Skills</a></span>
+                <span><a href="#project">Project</a></span>
+                {/* <span><a href="#client">Testimonials</a></span> */}
+                <span><a href="#footer">Portfolio</a></span>
+            </Nav>
+            <div
+                onClick={() => setBar(!bar)}
+                className="bars">
+                <div className="bar"></div>
+            </div>
+        </Container>
+    )
 }
 
 export default Header
