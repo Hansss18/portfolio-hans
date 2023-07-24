@@ -1,10 +1,11 @@
 import React from "react";
-import { MdDesignServices } from "react-icons/md";
+import { MdAndroid, MdDesignServices } from "react-icons/md";
 import { FiCodesandbox } from "react-icons/fi";
 import { CgWebsite } from "react-icons/cg";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 const Services = () => {
   return (
@@ -18,26 +19,23 @@ const Services = () => {
       <Cards>
         <Slide direction="left">
           <Card
-            Icon={MdDesignServices}
-            title={"ui/ux designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            Icon={MdAndroid}
+            title={"Flutter"}
+            disc={<ProgressBar completed={75} bgColor="#01be96" animateOnRender />}
           />
         </Slide>
         <Slide direction="up">
           <Card
             Icon={FiCodesandbox}
-            title={"graphic designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            title={"ReactJs"}
+            disc={<ProgressBar completed={65} bgColor="#01be96" animateOnRender />}
           />
         </Slide>
         <Slide direction="right">
           <Card
             Icon={CgWebsite}
-            title={"web designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            title={"Web Designer"}
+            disc={<ProgressBar completed={70} bgColor="#01be96" animateOnRender />}
           />
         </Slide>
       </Cards>
