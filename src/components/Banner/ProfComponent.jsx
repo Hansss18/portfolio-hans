@@ -12,7 +12,7 @@ const ProfComponent = () => {
           <h4>
             Hello <span className="green">I'am</span>
           </h4>
-          <h1 className="green">Farhan Ab.Gs</h1>
+          <h1 className="green">Farhan Ab.G</h1>
           <h3>Mobile Developer</h3>
           <p>
             I am Farhan Ab.G, a semester student
