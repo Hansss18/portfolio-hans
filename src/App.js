@@ -9,7 +9,7 @@ import Skill from "./components/Skills/Skills";
 function App() {
   useEffect(() => {
     const handleVisibilityChange = () => {
-      document.title = document.hidden ? "Come back please :(" : "Portfolio-Hans";
+      document.title = document.hidden ? "Come back" : "Portfolio-Hans";
     };
 
     document.addEventListener("visibilitychange", handleVisibilityChange);
